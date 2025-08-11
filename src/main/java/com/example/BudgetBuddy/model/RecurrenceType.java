@@ -1,4 +1,4 @@
-package com.example.BudgetBuddy.models;
+package com.example.BudgetBuddy.model;
 
 public enum RecurrenceType {
     NONE,
