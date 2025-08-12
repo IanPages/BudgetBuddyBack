@@ -14,7 +14,7 @@ public class Category {
     private TypeMovement type;
 
     //is NUll == everyone has that category
-    @ManyToOne
+    @ManyToOne(fetch= FetchType.LAZY)
     private User user;
 
     public Integer getId() {
@@ -55,5 +55,16 @@ public class Category {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Category(Integer id, String name,Boolean isDefault,TypeMovement type, User user ) {
+        this.isDefault = isDefault;
+        this.user = user;
+        this.type = type;
+        this.name = name;
+        this.id = id;
+    }
+    public Category() {
+        // Default constructor
     }
 }
