@@ -1,6 +1,7 @@
 package com.example.BudgetBuddy.model;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -30,6 +31,7 @@ public class Account {
     private LocalDate createdAt;
 
     @ManyToOne
+    @JsonBackReference
     private User user;
 
     public Integer getId() {

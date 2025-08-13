@@ -68,6 +68,10 @@ public class UserService {
         return "User registered successfully";
     }
 
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+
     public User getUserById(Integer userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found with id: " + userId));

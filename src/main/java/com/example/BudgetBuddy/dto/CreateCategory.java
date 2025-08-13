@@ -8,6 +8,7 @@ public class CreateCategory {
     private TypeMovement type;
     private Integer userId;
 
+
     public String getName() {
         return name;
     }

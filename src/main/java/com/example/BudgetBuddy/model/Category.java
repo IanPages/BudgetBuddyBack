@@ -1,5 +1,6 @@
 package com.example.BudgetBuddy.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -15,6 +16,7 @@ public class Category {
 
     //is NUll == everyone has that category
     @ManyToOne(fetch= FetchType.LAZY)
+    @JsonBackReference
     private User user;
 
     public Integer getId() {
