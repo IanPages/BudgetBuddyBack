@@ -1,4 +1,4 @@
-package com.example.BudgetBuddy.dto;
+package com.example.BudgetBuddy.dto.category;
 
 import com.example.BudgetBuddy.model.TypeMovement;
 

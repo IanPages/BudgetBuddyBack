@@ -1,15 +1,13 @@
 package com.example.BudgetBuddy.service;
 
-import com.example.BudgetBuddy.dto.CreateCategory;
-import com.example.BudgetBuddy.dto.ListCategory;
+import com.example.BudgetBuddy.dto.category.CreateCategory;
+import com.example.BudgetBuddy.dto.category.ListCategory;
 import com.example.BudgetBuddy.model.Category;
 import com.example.BudgetBuddy.repository.CategoryRepository;
-import com.example.BudgetBuddy.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CategoryService {

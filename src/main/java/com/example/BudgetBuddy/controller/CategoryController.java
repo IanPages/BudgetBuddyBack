@@ -1,6 +1,6 @@
 package com.example.BudgetBuddy.controller;
 
-import com.example.BudgetBuddy.dto.CreateCategory;
+import com.example.BudgetBuddy.dto.category.CreateCategory;
 import com.example.BudgetBuddy.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
